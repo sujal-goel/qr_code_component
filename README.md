@@ -52,20 +52,20 @@ To create the QR code component web page as described in the provided HTML code,
 
 Set Up HTML Boilerplate:
 
-Start with the <!DOCTYPE html> declaration to specify the HTML version.
-Open the <html> tag with the lang="en" attribute to define the language.
-Inside <html>, create the <head> and <body> sections.
+Start with the `<!DOCTYPE html>` declaration to specify the HTML version.
+Open the `<html>` tag with the lang="en" attribute to define the language.
+Inside `<html>`, create the `<head>` and `<body>` sections.
 Configure Head Section:
 
-Include <meta charset="UTF-8"> for character encoding.
-Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive design.
-Link a favicon with <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">.
-Import the "Outfit" font from Google Fonts using <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit"> (Note: The correct URL should be from fonts.googleapis.com).
-Set the title of the web page with <title>.
+Include `<meta charset="UTF-8">` for character encoding.
+Add `<meta name="viewport" content="width=device-width, initial-scale=1.0">` for responsive design.
+Link a favicon with `<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">`.
+Import the "Outfit" font from Google Fonts using `<link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">` (Note: The correct URL should be from fonts.googleapis.com).
+Set the title of the web page with `<title>`.
 Style the Page:
 
-Use <style> tag within the <head> section to include CSS.
-Import the "Outfit" font correctly using @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');.
+Use `<style>` tag within the `<head>` section to include CSS.
+Import the "Outfit" font correctly using `@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');`.
 Style the html and body to set the background color, font size, and center the content.
 Define styles for .box to set its background color, border radius, width, padding, text alignment, font family, and box shadow.
 Style the img within .box to control its width and height.
@@ -73,10 +73,10 @@ Apply specific font weights, sizes, and colors to h1 and p within .box.
 Style the .attribution section for credits, adjusting font size, text alignment, and link colors.
 Structure the Body:
 
-Create a <div> with the class box to contain the QR code image, a heading (<h1>), and a paragraph (<p>) describing the action (scanning the QR code).
-Include the QR code image with <img src="./images/image-qr-code.png">.
+Create a `<div>` with the class box to contain the QR code image, a heading (`<h1>`), and a paragraph (`<p>`) describing the action (scanning the QR code).
+Include the QR code image with `<img src="./images/image-qr-code.png">`.
 Add a paragraph below the .box to mention the challenge by Frontend Mentor.
-Include an attribution <div> at the bottom with a link to the coder's profile or website.
+Include an attribution `<div>` at the bottom with a link to the coder's profile or website.
 Final Touches:
 
 Review the code for any syntax errors or missing closing tags.
@@ -102,18 +102,18 @@ This project was an enriching experience that allowed me to delve deeper into th
 
 HTML5 Semantic Markup
 I gained a better understanding of the importance of using semantic HTML5 elements to structure the web page. This not only helps with the readability of the code but also improves accessibility for users and search engines. For example, using <header>, <main>, and <footer> tags to define the structure of the webpage.
-"""
+```
 <main class="container">
   <div class="qr-code-box">
     <img src="qr-code.png" alt="QR Code">
   </div>
 </main>
-"""
+```
 
 CSS Custom Properties
 The use of CSS custom properties (variables) was a game-changer in managing the site's color scheme and font sizes. It made the CSS more maintainable and easier to update. For instance, defining a color scheme and font sizes at the root level allowed me to reuse these values throughout the stylesheet, ensuring consistency and simplifying changes.
 
-"""
+```
 :root {
   --primary-color: papayawhip;
   --font-size-regular: 16px;
@@ -123,31 +123,31 @@ The use of CSS custom properties (variables) was a game-changer in managing the 
   background-color: var(--primary-color);
   font-size: var(--font-size-regular);
 }
-"""
+```
 
 Responsive Design
 Implementing a responsive design using media queries was crucial for ensuring the QR code component looked great on different devices. Learning to adjust the layout and font sizes based on the viewport width helped me understand the dynamics of responsive web design better.
 
-"""
+```
 @media (max-width: 768px) {
   .qr-code-box {
     width: 80%;
     padding: 20px;
   }
 }
-"""
+```
 
 CSS Flexbox
 Flexbox played a pivotal role in centering the QR code component and making the layout flexible. Understanding how to use display: flex; along with justify-content and align-items properties was instrumental in achieving a clean and centered layout.
 
-"""
+```
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-"""
+```
 Deployment with GitHub Pages
 Finally, deploying the project with GitHub Pages was a straightforward and effective way to share my work. Learning to navigate through GitHub's interface to set up a live site was an invaluable skill that will aid in future projects.
 
@@ -202,9 +202,6 @@ By focusing on these areas, I aim to build a solid foundation in both front-end 
 - Frontend Mentor - [@sujal-goel](https://www.frontendmentor.io/profile/sujal-goel)
 - Twitter - [@kanakgoel6](https://www.twitter.com/kanakgoel6)
 
-
-
-## Acknowledgments
 
 ## Acknowledgments
 
