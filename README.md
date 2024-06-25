@@ -42,75 +42,171 @@ Overall, the project aims to showcase the developer's skills in building a QR co
 
 ![](./images/dekstop.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://qr-code-component-iota-pearl.vercel.app/)
 
 ## My process
+To create the QR code component web page as described in the provided HTML code, follow these steps:
+
+Set Up HTML Boilerplate:
+
+Start with the <!DOCTYPE html> declaration to specify the HTML version.
+Open the <html> tag with the lang="en" attribute to define the language.
+Inside <html>, create the <head> and <body> sections.
+Configure Head Section:
+
+Include <meta charset="UTF-8"> for character encoding.
+Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive design.
+Link a favicon with <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">.
+Import the "Outfit" font from Google Fonts using <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit"> (Note: The correct URL should be from fonts.googleapis.com).
+Set the title of the web page with <title>.
+Style the Page:
+
+Use <style> tag within the <head> section to include CSS.
+Import the "Outfit" font correctly using @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');.
+Style the html and body to set the background color, font size, and center the content.
+Define styles for .box to set its background color, border radius, width, padding, text alignment, font family, and box shadow.
+Style the img within .box to control its width and height.
+Apply specific font weights, sizes, and colors to h1 and p within .box.
+Style the .attribution section for credits, adjusting font size, text alignment, and link colors.
+Structure the Body:
+
+Create a <div> with the class box to contain the QR code image, a heading (<h1>), and a paragraph (<p>) describing the action (scanning the QR code).
+Include the QR code image with <img src="./images/image-qr-code.png">.
+Add a paragraph below the .box to mention the challenge by Frontend Mentor.
+Include an attribution <div> at the bottom with a link to the coder's profile or website.
+Final Touches:
+
+Review the code for any syntax errors or missing closing tags.
+Ensure all paths (e.g., to the favicon, QR code image) are correct relative to the HTML file's location.
+Validate the HTML and CSS to ensure compatibility and responsiveness across different browsers and devices.
+Preview and Test:
+
+Open the HTML file in a web browser to preview the QR code component.
+Test the responsiveness by resizing the browser window and checking the layout on different devices if possible.
+Deployment:
+
+Once satisfied with the local preview, consider deploying the web page to a web server or a platform like GitHub Pages to share with others.
+
 
 ### Built with
 
 - HTML5 markup
 - CSS custom properties
-- Mobile-first workflow
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project was an enriching experience that allowed me to delve deeper into the nuances of web development, particularly focusing on creating a responsive and visually appealing QR code component. Here are some of the key learnings and highlights:
 
-To see how you can add code snippets, see below:
+HTML5 Semantic Markup
+I gained a better understanding of the importance of using semantic HTML5 elements to structure the web page. This not only helps with the readability of the code but also improves accessibility for users and search engines. For example, using <header>, <main>, and <footer> tags to define the structure of the webpage.
+"""
+<main class="container">
+  <div class="qr-code-box">
+    <img src="qr-code.png" alt="QR Code">
+  </div>
+</main>
+"""
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+CSS Custom Properties
+The use of CSS custom properties (variables) was a game-changer in managing the site's color scheme and font sizes. It made the CSS more maintainable and easier to update. For instance, defining a color scheme and font sizes at the root level allowed me to reuse these values throughout the stylesheet, ensuring consistency and simplifying changes.
+
+"""
+:root {
+  --primary-color: papayawhip;
+  --font-size-regular: 16px;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.body {
+  background-color: var(--primary-color);
+  font-size: var(--font-size-regular);
 }
-```
+"""
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Responsive Design
+Implementing a responsive design using media queries was crucial for ensuring the QR code component looked great on different devices. Learning to adjust the layout and font sizes based on the viewport width helped me understand the dynamics of responsive web design better.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+"""
+@media (max-width: 768px) {
+  .qr-code-box {
+    width: 80%;
+    padding: 20px;
+  }
+}
+"""
+
+CSS Flexbox
+Flexbox played a pivotal role in centering the QR code component and making the layout flexible. Understanding how to use display: flex; along with justify-content and align-items properties was instrumental in achieving a clean and centered layout.
+
+"""
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+"""
+Deployment with GitHub Pages
+Finally, deploying the project with GitHub Pages was a straightforward and effective way to share my work. Learning to navigate through GitHub's interface to set up a live site was an invaluable skill that will aid in future projects.
+
+These learnings have significantly contributed to my growth as a web developer, reinforcing my understanding of HTML, CSS, responsive design, and deployment processes.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### Continued Development
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+For my future projects, I aim to focus on several key areas to enhance my skills and deliver more sophisticated web solutions. These areas include:
+
+1. **JavaScript and Frameworks:**
+   - Deepen my understanding of vanilla JavaScript to improve interactivity and functionality.
+   - Explore and master at least one JavaScript framework (e.g., React, Vue, or Angular) for building more dynamic and scalable applications.
+
+2. **CSS Preprocessors:**
+   - Learn and incorporate CSS preprocessors like SASS or LESS to write more efficient, maintainable, and scalable CSS.
+
+3. **Responsive Design Techniques:**
+   - Continue to refine my responsive design skills, focusing on mobile-first design and advanced media queries to ensure optimal viewing across all devices.
+
+4. **Web Accessibility:**
+   - Prioritize web accessibility to make my projects more inclusive. This includes learning about ARIA roles, keyboard navigation, and color contrast standards.
+
+5. **Performance Optimization:**
+   - Focus on optimizing website performance, including faster load times and better user experience, through techniques like lazy loading, image optimization, and code splitting.
+
+6. **Backend Technologies:**
+   - Gain a basic understanding of backend technologies and databases to develop full-stack capabilities. Exploring Node.js, Express, and databases like MongoDB or SQL can provide a more holistic approach to web development.
+
+7. **Version Control and Collaboration:**
+   - Enhance skills in using Git and GitHub for version control, focusing on best practices for branching, merging, and collaborating on projects with other developers.
+
+8. **Deployment and DevOps:**
+   - Learn more about deployment processes, continuous integration (CI), and continuous deployment (CD) pipelines. Exploring platforms like Netlify, Vercel, and understanding Docker can be beneficial.
+
+9. **UI/UX Design Principles:**
+   - Improve understanding of UI/UX design principles to create more user-friendly and aesthetically pleasing designs. Tools like Figma or Adobe XD can be instrumental in this learning process.
+
+By focusing on these areas, I aim to build a solid foundation in both front-end and introductory back-end development, enabling me to tackle more complex projects and contribute more effectively to team efforts.
+
 
 ### Useful resources
 
-- [Example resource 1](https://www.youtube.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [YouTube](https://www.youtube.com) - This helped me for clearing my doubts and make me learn latest properties of html5 and  css3 . I really liked this pattern and will use it going forward.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@sujal-goel](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@kanakgoel6](https://www.twitter.com/yourusername)
+- Website - [kanak Goel](https://sites.google.com/ds.study.iitm.ac.in/kanak-goel?usp=sharing)
+- Frontend Mentor - [@sujal-goel](https://www.frontendmentor.io/profile/sujal-goel)
+- Twitter - [@kanakgoel6](https://www.twitter.com/kanakgoel6)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+## Acknowledgments
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+A special hat tip goes to the [CodeWithHarry](https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww) YouTube channel. Their comprehensive tutorials and clear explanations provided invaluable insights and inspiration throughout this project. Their dedication to making programming accessible and understandable has been a tremendous help. Thank you, CodeWithHarry, for being such a fantastic resource for developers at all levels.
+
