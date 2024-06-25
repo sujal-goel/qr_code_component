@@ -153,8 +153,6 @@ Finally, deploying the project with GitHub Pages was a straightforward and effec
 
 These learnings have significantly contributed to my growth as a web developer, reinforcing my understanding of HTML, CSS, responsive design, and deployment processes.
 
-### Continued development
-
 ### Continued Development
 
 For my future projects, I aim to focus on several key areas to enhance my skills and deliver more sophisticated web solutions. These areas include:
